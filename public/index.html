@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+<title>Donutcake LLC</title>
+<link rel="icon" type="image/png" href="logo.jpg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body {
+    font-family: "Times New Roman", Georgia, Serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+  }
+
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+
+  div>span.priceless {
+    float: right;
+    color: grey;
+  }
+
+  span.priceless {
+    float: right;
+    color: grey;
+  }
+</style>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+      <a href="#home" class="w3-bar-item w3-button">Donutcake LLC</a>
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+        <a href="#menu" class="w3-bar-item w3-button">Products</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <a href="#checkout" class="w3-bar-item w3-button">Check Out</a>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+    <img class="w3-image" src="img2.png" alt="Hamburger Catering" width="1600" height="800">
+    <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+      <h1 class="w3-xxlarge">Donutcake LLC</h1>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:1100px">
+
+    <!-- About Section -->
+    <div class="w3-row w3-padding-64" id="about">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <img src="img1.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+      </div>
+
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">About Catering</h1><br>
+        <h5 class="w3-center">Tradition since 1889</h5>
+        <p class="w3-large">The Catering was founded in blabla by Mr.Raza Karani in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+        <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Menu Section -->
+    <div class="w3-row w3-padding-64" id="menu">
+      <div class="w3-col l6 w3-padding-large">
+        <h1 class="w3-center">Our Products</h1><br>
+        <h4><a href="#Choc" style="color:blue">Croissants</a></h4>
+        <p class="w3-text-grey">Flavours: <a data-toggle="modal" data-target="#modal1">Chocolate</a>,<a data-toggle="modal" data-target="#modal2">Vanilla</a>,<a data-toggle="modal" data-target="#modal3">PB & Jelly</a>,<a data-toggle="modal" data-target="#modal4">PB & Chocolate</a>,<a data-toggle="modal" data-target="#modal5">Strawberry & Vanilla</a></p><br>
+
+        <h4><a href="#miniCrois" style="color:blue">Mini Croissants</a></h4>
+        <p class="w3-text-grey">Flavours: <a data-toggle="modal" data-target="#modal6">Chocolate</a>,<a data-toggle="modal" data-target="#modal7">Vanilla</a></p><br>
+
+        <h4><a href="#BagelSnac" style="color:blue">Bagel Chips(Snack Size)</a></h4>
+        <p class="w3-text-grey">Flavours: <a data-toggle="modal" data-target="#modal8">Roasted Garlic</a>,<a data-toggle="modal" data-target="#modal9">Everything</a>,<a data-toggle="modal" data-target="#modal10">Cinnamon Raisin</a></p><br>
+
+        <h4><a href="#BagelGros" style="color:blueviolet">Bagel Chips(Grocery Size)</a></h4>
+        <p class="w3-text-grey">Flavours: <a data-toggle="modal" data-target="#modal11">Roasted Garlic</a>,<a data-toggle="modal" data-target="#modal12">Sea Salt</a>,<a data-toggle="modal" data-target="#modal13">Everything</a>,<a data-toggle="modal" data-target="#modal14">Cinnamon Raisin</a></p><br>
+
+        <h4><a href="#PizzetiSnack" style="color:blue">Pizzeti(Snack Size)</a></h4>
+        <p class="w3-text-grey">Flavours: <a data-toggle="modal" data-target="#modal16">Grana Padano & Tomato</a>,<a data-toggle="modal" data-target="#modal17">Emmentaler Tomato & Garlic</a>,<a data-toggle="modal" data-target="#modal18">Emmentaler Tomato & Olive</a></p>
+
+        <h4><a href="#PizzetiGros" style="color:blueviolet">Pizzeti(Grocery Size)</a></h4>
+        <p class="w3-text-grey">Flavours: <a data-toggle="modal" data-target="#modal19">Grana Padano & Tomato</a>,<a data-toggle="modal" data-target="#modal20">Emmentaler Tomato & Garlic</a>,<a data-toggle="modal" data-target="#modal21">Emmentaler Tomato & Olive</a></p>
+      </div>
+
+
+
+      <div class="w3-col l6 w3-padding-large">
+        <img src="img5.png" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+      </div>
+    </div>
+
+    <hr>
+
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-padding-64" id="contact">
+      <h1>Contact</h1><br>
+      <p>We offer full-service Bakery Products for any event, large or small. We understand your needs and we will cater all the Bakery Products to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.
+      </p>
+      <p class="w3-text-blue-grey w3-large"><b>Bakery Service, 802 Summer Park Drive Suite 113 Stafford, Texas 77477</b></p>
+      <p>You can also contact us by phone (323)786 7865 or email zaheer555@msn.com, or you can send us a message here:</p>
+      <!-- <form action="/action_page.php" target="_blank"> -->
+      <form onsubmit="alert('Your Response has been Submitted Thanks')">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+        <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+      </form>
+    </div>
+
+    <!-- <div id="choc" style="display:'inline-flex'"> -->
+    <!-- <h1 style="color:brown" id="Choc">Croissants</h1>
+    <Row>
+      <span style="display:inline-block"> 
+        <img src="1.png" height=115px , width="30%" alt="Croissants" data-toggle="modal" data-target="#modal1" />
+        <p>Chocolate</p>
+      </span>
+      <span style="display:inline-block">
+        <img src="2.png" height=115px , width="30%" alt="Croissants" data-toggle="modal" data-target="#modal2" />
+        <p>Vanilla</p>
+      </span>
+      <span style="display:inline-block">
+          <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal3" />
+          <p style="text-align:center">PB & Jelly</p>
+        </span>
+      <span style="display:inline-block">
+            <img src="logo.jpg" height=115px , width="85%" alt="Croissants"  data-toggle="modal" data-target="#modal4"/>
+            <p style="text-align:center">PB & Chocolate</p>
+          </span>
+      <span style="display:inline-block">
+              <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal5"/>
+              <p style="text-align:center">Strawberry & Vanilla</p>
+          </span>
+
+    </Row>
+    <h1 style="color:brown" id="miniCrois">Mini Croissants</h1>
+    <span style="display:inline-block" id="Crois"> 
+            <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal6"/>
+            <p style="text-align:center">Chocolate</p>
+          </span>
+    <span style="display:inline-block">
+            <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal7"/>
+            <p style="text-align:center">Vanilla</p>
+          </span>
+
+    <h1 style="color:brown" id="BagelSnac">Bagel Chips(Snack Size)</h1>
+    <span style="display:inline-block" id="Crois"> 
+                  <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal8"/>
+                  <p style="text-align:center">Roasted Garlic</p>
+                </span>
+    <span style="display:inline-block">
+                  <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal9"/>
+                  <p style="text-align:center">Everything</p>
+                </span>
+    <span style="display:inline-block">
+                    <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal10"/>
+                    <p style="text-align:center">Cinnamon Raisin</p>
+                  </span>
+
+    <h1 style="color:brown" id="BagelGros">Bagel Chips(Grocery Size)</h1>
+    <span style="display:inline-block" id="Crois"> 
+                          <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal11"/>
+                          <p style="text-align:center">Roasted Garlic</p>
+                        </span>
+    <span style="display:inline-block">
+                          <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal12"/>
+                          <p style="text-align:center">Sea Salt</p>
+                        </span>
+    <span style="display:inline-block">
+                            <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal13"/>
+                            <p style="text-align:center">Everything</p>
+                          </span>
+    <span style="display:inline-block">
+                              <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal14"/>
+                              <p style="text-align:center">Cinnamon Raisin</p>
+                            </span>
+
+    <h1 style="color:brown" id="PizzetiSnack">Pizzeti(Snack Size)</h1>
+    <span style="display:inline-block" id="Crois"> 
+                                    <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal15"/>
+                                    <p style="text-align:center">Grana Padano & Tomato</p>
+                                  </span>
+    <span style="display:inline-block">
+                                    <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal16"/>
+                                    <p style="text-align:center">Emmentaler Tomato & Garlic</p>
+                                  </span>
+    <span style="display:inline-block">
+                                      <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal17"/>
+                                      <p style="text-align:center">Everything</p>
+                                    </span>
+    <span style="display:inline-block">
+                                        <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal18"/>
+                                        <p style="text-align:center">Emmentaler Tomato & Olive</p>
+                                      </span>
+
+    <h1 style="color:brown" id="PizzetiGros">Pizzeti(Grocery Size)</h1>
+    <span style="display:inline-block" id="Crois"> 
+                                              <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal19"/>
+                                              <p style="text-align:center"> Grana Padano & Tomato</p>
+                                            </span>
+    <span style="display:inline-block">
+                                        <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal20"/>
+                                        <p style="text-align:center">Emmentaler Tomato & Garlic</p>
+                                      </span>
+    <span style="display:inline-block">
+                                        <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal21"/>
+                                        <p style="text-align:center">Everything</p>
+                                      </span>
+    <span style="display:inline-block">
+                                        <img src="logo.jpg" height=115px , width="85%" alt="Croissants" data-toggle="modal" data-target="#modal22"/>
+                                        <p style="text-align:center">Emmentaler Tomato & Olive</p>
+                                      </span>
+ -->
+
+
+
+
+    <div class="col-25" id="checkout">
+      <div class="container">
+        <h4>Cart
+          <span class="priceless" style="color:black">
+                                              <i class="fa fa-shopping-cart"></i> 
+                                              <b id="count"></b>
+                                            </span>
+        </h4>
+
+        <div> <span id="cm1"></span><span class="priceless" id="qt1"></span></div>
+        <div> <span id="cm2"></span><span class="priceless" id="qt2"></span></div>
+        <div> <span id="cm3"></span><span class="priceless" id="qt3"></span></div>
+        <div> <span id="cm4"></span><span class="priceless" id="qt4"></span></div>
+        <div> <span id="cm5"></span><span class="priceless" id="qt5"></span></div>
+        <div> <span id="cm6"></span><span class="priceless" id="qt6"></span></div>
+        <div> <span id="cm7"></span><span class="priceless" id="qt7"></span></div>
+        <div> <span id="cm8"></span><span class="priceless" id="qt8"></span></div>
+        <div> <span id="cm9"></span><span class="priceless" id="qt9"></span></div>
+        <div> <span id="cm10"></span><span class="priceless" id="qt10"></span></div>
+        <div> <span id="cm11"></span><span class="priceless" id="qt11"></span></div>
+        <div> <span id="cm12"></span><span class="priceless" id="qt12"></span></div>
+        <div> <span id="cm13"></span><span class="priceless" id="qt13"></span></div>
+        <div> <span id="cm14"></span><span class="priceless" id="qt14"></span></div>
+        <div> <span id="cm15"></span><span class="priceless" id="qt15"></span></div>
+        <div> <span id="cm16"></span><span class="priceless" id="qt16"></span></div>
+
+
+        <div>
+          <hr>
+          <p>Total <span class="priceless" style="color:black"><b id="totalp"></b></span></p>
+        </div>
+      </div>
+      <!-- </div> -->
+      <!-- End page content -->
+    </div>
+
+    <!-- Modals -->
+    <footer class="w3-center w3-light-grey w3-padding-32">
+      <p>Powered by <a href="https://github.com/aliasgharkarani" title="W3.CSS" target="_blank" class="w3-hover-text-green">Ali Karani</a></p>
+    </footer>
+
+    <div class="modal fade" id="modal1" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title" id="n1">Croissants</h4>
+          </div>
+          <div class="modal-body">
+            <img src="1.png" width="80%" ,height: '130px' />
+            <p style="text-align:center" id="f1">Chocolate</p>
+            <p style="display:inline-block" id="p1">25</p> <input type="text" size=1,placeholder: "Qty" id="q1" /> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n1','f1','p1','q1')" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal2" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n2">Croissants</h4>
+        </div>
+        <div class="modal-body">
+          <img src="2.png" width="80%" ,height: '130px' />
+          <p style="text-align:center" id="f2">Vanilla</p>
+          <p style="display:inline-block" id="p2">25</p> <input type="text" size=1,placeholder: "Qty" id="q2" /> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n2','f2','p2','q2')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="modal fade" id="modal3" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n3">Croissants</h4>
+        </div>
+        <div class="modal-body">
+          <img src="3.png" width="80%" ,height: '130px' />
+          <p style="text-align:center" id="f3">PB & Jelly</p>
+          <p style="display:inline-block" id="p3">25</p> <input type="text" size=1,placeholder: "Qty" id="q3" /> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n3','f3','p3','q3')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="modal4" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n4">Croissants</h4>
+        </div>
+        <div class="modal-body">
+          <img src="4.png" width="80%" ,height: '130px' />
+          <p style="text-align:center" id="f4">PB & Chocolate</p>
+          <p style="display:inline-block" id="p4">25</p> <input type="text" size=1,placeholder: "Qty" id="q4" /> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n4','f4','p4','q4')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="modal5" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n5">Croissants</h4>
+        </div>
+        <div class="modal-body">
+          <img src="5.png" width="80%" ,height: '130px' />
+          <p style="text-align:center" id="f5">Strawberry & Vanilla</p>
+          <p style="display:inline-block" id="p5">25</p> <input type="text" size=1,placeholder: "Qty"/> <input type="button" id="q5" class="btn" value="Odrer" onclick="CheckOut('n5','f5','p5','q5')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="modal fade" id="modal6" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n6">Mini Croissants</h4>
+        </div>
+        <div class="modal-body">
+          <img src="13.png" width="80%" ,height: '130px' />
+          <p style="text-align:center" id="f6">Chocolate</p>
+          <p style="display:inline-block" id="p6">25</p> <input type="text" size=1,placeholder: "Qty" id="q6" /> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n6','f6','p6','q6')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="modal fade" id="modal7" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n7">Mini Croissants</h4>
+        </div>
+        <div class="modal-body">
+          <img src="14.png" width="80%" ,height: '130px' />
+          <p style="text-align:center" id="f7">Vanilla</p>
+          <p style="display:inline-block" id="p7">25</p> <input type="text" size=1,placeholder: "Qty" id="q7" /> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n7','f7','p7','q7')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="modal fade" id="modal8" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n8">Bagel Chips(Snack Size)</h4>
+        </div>
+        <div class="modal-body">
+          <img src="10.png" width="65%" ,height: '130px' />
+          <p style="text-align:center" id="f8">Roasted Garlic</p>
+          <p style="display:inline-block" id="p8">25</p> <input type="text" size=1,placeholder: "Qty" id="q8" /> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n8','f8','p8','q8')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="modal fade" id="modal9" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n9">Bagel Chips(Snack Size)</h4>
+        </div>
+        <div class="modal-body">
+          <img src="11.png" width="65%" ,height: '130px' />
+          <p style="text-align:center" id="f9">Everything</p>
+          <p style="display:inline-block" id="p9">25</p> <input type="text" size=1,placeholder: "Qty" id="q9" /> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n9','f9','p9','q9')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="modal10" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n10">Bagel Chips(Snack Size)</h4>
+        </div>
+        <div class="modal-body">
+          <img src="12.png" width="65%" ,height: '130px' />
+          <p style="text-align:center" id="f10">Cinnamon Raisin</p>
+          <p style="display:inline-block" id="p10">25</p> <input type="text" size=1,placeholder: "Qty" id="q10" /> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n10','f10','p10','q10')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="modal11" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n11">Bagel Chips(Grocery Size)</h4>
+        </div>
+        <div class="modal-body">
+          <img src="6.png" width="65%" ,height: '130px' />
+          <p style="text-align:center" id="f11">Roasted Garlic</p>
+          <p style="display:inline-block" id="p11">25</p> <input type="text" size=1,placeholder: "Qty" id="q11" /> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n11','f11','p11','q11')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="modal12" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n12">Bagel Chips(Grocery Size)</h4>
+        </div>
+        <div class="modal-body">
+          <img src="7.png" width="65%" ,height: '130px' />
+          <p style="text-align:center" id="f12">Sea Salt</p>
+          <p style="display:inline-block" id="p12">25</p> <input type="text" size=1,placeholder: "Qty" id="q12" /> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n12','f12','p12','q12')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="modal13" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n13">Bagel Chips(Grocery Size)</h4>
+        </div>
+        <div class="modal-body">
+          <img src="8.png" width="65%" ,height: '130px' />
+          <p style="text-align:center" id="f13">Everything</p>
+          <p style="display:inline-block" id="p13">25</p> <input type="text" size=1,placeholder: "Qty" id="q13" /> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n13','f13','p13','q13')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="modal14" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n14">Bagel Chips(Grocery Size)</h4>
+        </div>
+        <div class="modal-body">
+          <img src="99.png" width="65%" ,height: '130px' />
+          <p style="text-align:center" id="f14">Cinnamon Raisin</p>
+          <p style="display:inline-block" id="p14">25</p> <input type="text" size=1,placeholder: "Qty" id="q14" /> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n14','f14','p14','q14')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="modal15" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n15">Pizzeti(Snack Size)</h4>
+        </div>
+        <div class="modal-body">
+          <img src="logo.jpg" />
+          <p style="text-align:center" id="f15">Grana Padano & Tomato</p>
+          <p style="display:inline-block" id="p15">25</p> <input type="text" size=1,placeholder: "Qty" id="q15" /> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n15','f15','p15','q15')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="modal16" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n16">Pizzeti(Snack Size)</h4>
+        </div>
+        <div class="modal-body">
+          <img src="logo.jpg" />
+          <p style="text-align:center" id="f16">Emmentaler Tomato & Garlic</p>
+          <p style="display:inline-block" id="p16">25</p> <input type="text" size=1,placeholder: "Qty" id="q16" /> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n16','f16','p16','q16')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="modal17" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n17">Pizzeti(Snack Size)</h4>
+        </div>
+        <div class="modal-body">
+          <img src="logo.jpg" />
+          <p style="text-align:center" id="f17">Everything</p>
+          <p style="display:inline-block" id="p17">25</p> <input type="text" size=1,placeholder: "Qty" id="q17" /> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n17','f17','p17','q17')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="modal18" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n18">Pizzeti(Snack Size)</h4>
+        </div>
+        <div class="modal-body">
+          <img src="logo.jpg" />
+          <p style="text-align:center" id="f18">Emmentaler Tomato & Olive</p>
+          <p style="display:inline-block" id="p18">25</p> <input type="text" size=1,placeholder: "Qty"/> <input id="q18" type="button" class="btn" value="Odrer" onclick="CheckOut('n18','f18','p18','q18')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="modal19" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n19">Pizzeti(Grocery Size)</h4>
+        </div>
+        <div class="modal-body">
+          <img src="logo.jpg" />
+          <p style="text-align:center" id="f19">Grana Padano & Tomato</p>
+          <p style="display:inline-block" id="p19">25</p> <input id="q19" type="text" size=1,placeholder: "Qty"/> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n19','f19','p19','q19')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="modal20" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n20">Pizzeti(Grocery Size)</h4>
+        </div>
+        <div class="modal-body">
+          <img src="logo.jpg" />
+          <p style="text-align:center" id="f20">Emmentaler Tomato & Garlic</p>
+          <p style="display:inline-block" id="p20">25</p> <input type="text" size=1,placeholder: "Qty" id="q20" /> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n20','f20','p20','q20')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="modal21" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n21">Pizzeti(Grocery Size)</h4>
+        </div>
+        <div class="modal-body">
+          <img src="logo.jpg" />
+          <p style="text-align:center" id="f21">Everything</p>
+          <p style="display:inline-block" id="p21">25</p> <input type="text" id="q21" size=1,placeholder: "Qty"/> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n21','f21','p21','q21')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="modal22" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n22">Pizzeti(Grocery Size)</h4>
+        </div>
+        <div class="modal-body">
+          <img src="logo.jpg" />
+          <p style="text-align:center" id="f22">Emmentaler Tomato & Olive</p>
+          <p style="display:inline-block" id="p22">25</p> <input type="text" size=1,placeholder: "Qty" id="q22" /> <input type="button" class="btn" value="Odrer" onclick="CheckOut('n22','f22','p22','q22')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- 'Pizzeti(Grocery Size)','Emmentaler Tomato & Olive','25',qp   n,f,p,q-->
+  <script>
+    var order = []; var total = 0;
+    function CheckOut(name, flavour, price, quantity) {
+      let n = document.getElementById(name).innerHTML;
+      let f = document.getElementById(flavour).innerHTML;
+      let p = document.getElementById(price).innerHTML;
+      let q = document.getElementById(quantity).value;
+      // alert(n)
+      // alert(f)
+      // alert(q)
+      let a = (p * q);
+      // alert(a);
+      // alert(a);
+      // alert(n+f+p+q+a);
+      order.push({ name: `${n}`, flavour: `${f}`, price: `${p}`, quantity: `${q}`, amount: `${a}` });
+      total += parseInt(order[order.length - 1].amount);
+      // for(var i=0;i<order.length;i++){
+      // alert(order[i].name) 
+      // alert(order[order.length-1].name+" costs/per peice "+order[order.length-1].price+" total "+order[order.length-1].amount)
+      document.getElementById("cm" + order.length).innerHTML = order[order.length - 1].name + " / " + order[order.length - 1].flavour;
+      document.getElementById("qt" + order.length).innerHTML = order[order.length - 1].amount;
+      document.getElementById("totalp").innerHTML = total;
+      document.getElementById("count").innerHTML = order.length;
+      // alert(order[i].name);
+      // }
+      // alert("total "+total);
+    }
+  </script>
+
+</body>
+
+</html>
