@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Donutcake LLC</title>
+<title>Donutcake.com LLC</title>
 <link rel="icon" type="image/png" href="logo.jpg">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,11 +28,17 @@
     color: aliceblue !important;
   }
 
+  .full {
+    width: '100%' !important;
+  }
+
   .container {
-    background-color: #f2f2f2;
+    background-color: #cbebf7;
     padding: 5px 20px 15px 20px;
     border: 1px solid lightgrey;
     border-radius: 3px;
+    width: 100%;
+    margin: 0 !important;
   }
 
   div>span.priceless {
@@ -44,6 +50,17 @@
     float: right;
     color: grey;
   }
+
+  .hd {
+    color: #2ccea2;
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+
+  .pd {
+    color: #70bdc1 !important;
+    font-weight: bold;
+  }
 </style>
 
 <body>
@@ -51,7 +68,7 @@
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
     <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-      <a href="#home" class="w3-bar-item w3-button">Donutcake LLC</a>
+      <a href="#home" class="w3-bar-item w3-button">Donutcake.com LLC</a>
       <!-- Right-sided navbar links. Hide them on small screens -->
       <div class="w3-right w3-hide-small">
         <a href="#about" class="w3-bar-item w3-button">About</a>
@@ -67,7 +84,7 @@
   <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
     <img class="w3-image" src="img2.png" alt="Hamburger Catering" width="1600" height="800">
     <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-      <h1 class="w3-xxlarge color">Donutcake LLC</h1>
+      <h1 class="w3-xxlarge color">Donutcake.com LLC</h1>
     </div>
   </header>
 
@@ -75,7 +92,7 @@
   <div class="w3-content" style="max-width:1100px">
 
     <!-- About Section -->
-    <div class="w3-row w3-padding-64" id="about">
+    <div cl5ass="w3-row w3-padding-64" id="about">
       <div class="w3-col m6 w3-padding-large w3-hide-small">
         <img src="img1.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
       </div>
@@ -101,11 +118,12 @@
     <div class="w3-row w3-padding-64" id="menu">
       <div class="w3-col l6 w3-padding-large">
         <h1 class="w3-center">Our Products</h1>
+        <p class="w3-center" style="font-size:20">Bona Peti,Hostess,7 Days</p>
         <br>
         <h4>
-          <a href="#Choc" style="color:blue">Croissants</a>
+          <a href="#Choc" class="hd">Croissants</a>
         </h4>
-        <p class="w3-text-grey">Flavours:
+        <p class="w3-text-grey pd">Flavours:
           <a data-toggle="modal" data-target="#modal1">Chocolate</a>,
           <a data-toggle="modal" data-target="#modal2">Vanilla</a>,
           <a data-toggle="modal" data-target="#modal3">PB & Jelly</a>,
@@ -115,18 +133,18 @@
         <br>
 
         <h4>
-          <a href="#miniCrois" style="color:blue">Mini Croissants</a>
+          <a href="#miniCrois" class="hd">Mini Croissants</a>
         </h4>
-        <p class="w3-text-grey">Flavours:
+        <p class="w3-text-grey pd">Flavours:
           <a data-toggle="modal" data-target="#modal6">Chocolate</a>,
           <a data-toggle="modal" data-target="#modal7">Vanilla</a>
         </p>
         <br>
 
         <h4>
-          <a href="#BagelSnac" style="color:blue">Bagel Chips(Snack Size)</a>
+          <a href="#BagelSnac" class="hd">Bagel Chips(Snack Size)</a>
         </h4>
-        <p class="w3-text-grey">Flavours:
+        <p class="w3-text-grey pd">Flavours:
           <a data-toggle="modal" data-target="#modal8">Roasted Garlic</a>,
           <a data-toggle="modal" data-target="#modal9">Everything</a>,
           <a data-toggle="modal" data-target="#modal10">Cinnamon Raisin</a>
@@ -134,9 +152,9 @@
         <br>
 
         <h4>
-          <a href="#BagelGros" style="color:blueviolet">Bagel Chips(Grocery Size)</a>
+          <a href="#BagelGros" class="hd">Bagel Chips(Grocery Size)</a>
         </h4>
-        <p class="w3-text-grey">Flavours:
+        <p class="w3-text-grey pd">Flavours:
           <a data-toggle="modal" data-target="#modal11">Roasted Garlic</a>,
           <a data-toggle="modal" data-target="#modal12">Sea Salt</a>,
           <a data-toggle="modal" data-target="#modal13">Everything</a>,
@@ -145,50 +163,53 @@
         <br>
 
         <h4>
-          <a href="#PizzetiSnack" style="color:blue">Pizzeti(Snack Size)</a>
+          <a href="#PizzetiSnack" class="hd">Pizzeti(Snack Size)</a>
         </h4>
-        <p class="w3-text-grey">Flavours:
+        <p class="w3-text-grey pd">Flavours:
           <a data-toggle="modal" data-target="#modal16">Grana Padano & Tomato</a>,
           <a data-toggle="modal" data-target="#modal17">Emmentaler Tomato & Garlic</a>,
           <a data-toggle="modal" data-target="#modal18">Emmentaler Tomato & Olive</a>
         </p>
 
         <h4>
-          <a href="#PizzetiGros" style="color:blueviolet">Pizzeti(Grocery Size)</a>
+          <a href="#PizzetiGros" class="hd">Pizzeti(Grocery Size)</a>
         </h4>
-        <p class="w3-text-grey">Flavours:
+        <p class="w3-text-grey pd">Flavours:
           <a data-toggle="modal" data-target="#modal19">Grana Padano & Tomato</a>,
           <a data-toggle="modal" data-target="#modal20">Emmentaler Tomato & Garlic</a>,
           <a data-toggle="modal" data-target="#modal22">Emmentaler Tomato & Olive</a>
         </p>
 
         <h4>
-          <a href="#BaDan" style="color:blueviolet">BA Dan</a>
+          <a href="#BaDan" class="hd">BA Danish</a>
         </h4>
-        <p class="w3-text-grey">Flavours:
+        <p class="w3-text-grey pd">Flavours:
           <a data-toggle="modal" data-target="#modal23">Apple Turnover</a>,
           <a data-toggle="modal" data-target="#modal24">Bear Claw</a>,
           <a data-toggle="modal" data-target="#modal25">Chese and Berries</a>,
           <a data-toggle="modal" data-target="#modal26">Cheese Croissant</a>,
           <a data-toggle="modal" data-target="#modal27">Blueberry Cream</a>
+          <a data-toggle="modal" data-target="#modal50">Lemon Cream</a>
+          <a data-toggle="modal" data-target="#modal51">Ultemate Cinamon</a>
+          <a data-toggle="modal" data-target="#modal52">Viana Cream</a>
         </p>
 
         <h4>
-          <a href="#BaDan" style="color:blueviolet">BA Muff</a>
+          <a href="#BaDan" class="hd">BA Muffin</a>
         </h4>
-        <p class="w3-text-grey">Flavours:
+        <p class="w3-text-grey pd">Flavours:
           <a data-toggle="modal" data-target="#modal28">Cheese</a>,
           <a data-toggle="modal" data-target="#modal29">Strawberry Cheese</a>,
           <a data-toggle="modal" data-target="#modal30">Banana Nut</a>,
-          <a data-toggle="modal" data-target="#modal3">Blueberry</a>,
+          <a data-toggle="modal" data-target="#modal31">Blueberry</a>,
           <a data-toggle="modal" data-target="#modal32">Choco Chip</a>,
           <a data-toggle="modal" data-target="#modal33">Choco Choco</a>
         </p>
 
         <h4>
-          <a href="#BaDan" style="color:blueviolet">BA Cake</a>
+          <a href="#BaDan" class="hd">BA Cake Bread</a>
         </h4>
-        <p class="w3-text-grey">Flavours:
+        <p class="w3-text-grey pd">Flavours:
           <a data-toggle="modal" data-target="#modal34">Banana</a>,
           <a data-toggle="modal" data-target="#modal35">Pound</a>,
           <a data-toggle="modal" data-target="#modal36">Cheese</a>,
@@ -197,38 +218,146 @@
         </p>
 
         <h4>
-          <a href="#BaDan" style="color:blueviolet">BA BAr Cake</a>
+          <a href="#BaDan" class="hd">BA Bar Cake</a>
         </h4>
-        <p class="w3-text-grey">Flavours:
+        <p class="w3-text-grey pd">Flavours:
           <a data-toggle="modal" data-target="#modal39">Coffe Cheese</a>,
           <a data-toggle="modal" data-target="#modal40">Creme Cheese</a>
         </p>
 
         <h4>
-          <a href="#BaDan" style="color:blueviolet">BA Concha</a>
+          <a href="#BaDan" class="hd">BA Donut</a>
         </h4>
-        <p class="w3-text-grey">Flavours:
+        <p class="w3-text-grey pd">Flavours:
+          <a data-toggle="modal" data-target="#modal48">Donuts Choclate</a>,
+          <a data-toggle="modal" data-target="#modal49">Donuts Chez Berries</a>
+          <a data-toggle="modal" data-target="#modal53">Donuts Crunch</a>,
+          <a data-toggle="modal" data-target="#modal54">Donuts Powered</a>
+        </p>
+
+        <h4>
+          <a href="#BaDan" class="hd">BA Concha</a>
+        </h4>
+        <p class="w3-text-grey pd">Flavours:
           <a data-toggle="modal" data-target="#modal41">White</a>,
           <a data-toggle="modal" data-target="#modal42">Chocolate</a>
         </p>
-         
+
         <h4>
-          <a href="#BaDan" style="color:blueviolet">Others</a>
+          <a href="#BaDan" class="hd">HO Cup Cake</a>
         </h4>
-        <p class="w3-text-grey">
+        <p class="w3-text-grey pd">Flavours:
+          <a data-toggle="modal" data-target="#modal55">Choc</a>,
+          <a data-toggle="modal" data-target="#modal56">Orange</a>
+          <a data-toggle="modal" data-target="#modal57">Golden</a>
+        </p>
+
+        <h4>
+          <a href="#BaDan" class="hd">HO Ding Dong</a>
+        </h4>
+        <p class="w3-text-grey pd">Flavours:
+          <a data-toggle="modal" data-target="#modal58">Choc</a>,
+          <a data-toggle="modal" data-target="#modal59">White</a>
+          <a data-toggle="modal" data-target="#modal60">Prut Butter</a>
+        </p>
+
+        <h4>
+          <a href="#BaDan" class="hd">HO Twinkie</a>
+        </h4>
+        <p class="w3-text-grey pd">Flavours:
+          <a data-toggle="modal" data-target="#modal61">Golden</a>,
+          <a data-toggle="modal" data-target="#modal62">Choc</a>
+          <a data-toggle="modal" data-target="#modal63">P Butter</a>
+        </p>
+
+        <h4>
+          <a href="#BaDan" class="hd">HO HO</a>
+        </h4>
+        <p class="w3-text-grey pd">Flavours:
+          <a data-toggle="modal" data-target="#modal64">Choc</a>,
+          <a data-toggle="modal" data-target="#modal65">Peanut Butter</a>
+        </p>
+
+        <h4>
+          <a href="#BaDan" class="hd">HO Zinger</a>
+        </h4>
+        <p class="w3-text-grey pd">Flavours:
+          <a data-toggle="modal" data-target="#modal66">Choc</a>,
+          <a data-toggle="modal" data-target="#modal67">Vanila</a>
+          <a data-toggle="modal" data-target="#modal68">Rasberry</a>
+        </p>
+
+        <h4>
+          <a href="#BaDan" class="hd">HO Cake</a>
+        </h4>
+        <p class="w3-text-grey pd">Flavours:
+          <a data-toggle="modal" data-target="#modal69">Cream Cheese</a>,
+          <a data-toggle="modal" data-target="#modal70">Iced Lemon</a>
+        </p>
+
+        <h4>
+          <a href="#BaDan" class="hd">HO Brownie</a>
+        </h4>
+        <p class="w3-text-grey pd">Flavours:
+          <a data-toggle="modal" data-target="#modal71">M & M</a>,
+          <a data-toggle="modal" data-target="#modal72">Butter Finger</a>
+        </p>
+        <h4>
+          <a href="#BaDan" class="hd">HO Pie</a>
+        </h4>
+        <p class="w3-text-grey pd">Flavours:
+          <a data-toggle="modal" data-target="#modal73">Apple</a>,
+          <a data-toggle="modal" data-target="#modal74">Cherry</a>
+        </p>
+
+        <h4>
+          <a href="#BaDan" class="hd">HO Donut
+            <a1/a>
+        </h4>
+        <p class="w3-text-grey pd">Flavours:
+          <a data-toggle="modal" data-target="#modal75">Choc</a>,
+          <a data-toggle="modal" data-target="#modal76">Double Choc</a>
+          <a data-toggle="modal" data-target="#modal77">Powered</a>
+          <a data-toggle="modal" data-target="#modal78">Crunch</a>
+          <a data-toggle="modal" data-target="#modal79">Gaized</a>
+        </p>
+
+        <h4>
+          <a href="#BaDan" class="hd">HO Dannish</a>
+        </h4>
+        <p class="w3-text-grey pd">Flavours:
+          <a data-toggle="modal" data-target="#modal80">Apple</a>,
+          <a data-toggle="modal" data-target="#modal81">Cheese</a>
+          <a data-toggle="modal" data-target="#modal82">Berry & Cheese</a>
+        </p>
+
+        <h4>
+          <a href="#BaDan" class="hd">HO Muffin</a>
+        </h4>
+        <p class="w3-text-grey pd">Flavours:
+          <a data-toggle="modal" data-target="#modal83">Banana Nut</a>,
+          <a data-toggle="modal" data-target="#modal84">Banana </a>
+          <a data-toggle="modal" data-target="#modal85">Choc Chip</a>
+        </p>
+        <h4>
+          <a href="#BaDan" class="hd">HO Twins</a>
+        </h4>
+        <p class="w3-text-grey pd">Flavours:
+          <a data-toggle="modal" data-target="#modal86">Choc Chip</a>,
+          <a data-toggle="modal" data-target="#modal87">Fudge Blondle</a>
+        </p>
+        <h4>
+          <a href="#BaDan" class="hd">Others</a>
+        </h4>
+        <p class="w3-text-grey pd">
           <a data-toggle="modal" data-target="#modal43">Semitas</a>,
           <a data-toggle="modal" data-target="#modal44">Picon</a>,
           <a data-toggle="modal" data-target="#modal45">Pan De Queso</a>,
           <a data-toggle="modal" data-target="#modal46">Cinnamon Roll</a>,
           <a data-toggle="modal" data-target="#modal47">Galleta con Pasas</a>,
-          <a data-toggle="modal" data-target="#modal48">Donuts Choclate</a>,
-          <a data-toggle="modal" data-target="#modal49">Donuts Chez Berries</a>
         </p>
-         
 
       </div>
-
-
 
       <div class="w3-col l6 w3-padding-large">
         <img src="img5.png" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
@@ -377,7 +506,7 @@
 
 
 
-    <div class="col-25" id="checkout">
+    <div class="col-25 full" id="checkout">
       <div class="container">
         <h4>Cart
           <span class="priceless" style="color:black">
@@ -528,7 +657,7 @@
     </div>
 
     <!-- Modals -->
-    <footer class="w3-center w3-light-grey w3-padding-32">
+    <footer class="w3-center w3-light-grey w3-padding-32 full">
       <p>Powered by
         <a href="https://github.com/aliasgharkarani" title="W3.CSS" target="_blank" class="w3-hover-text-green">Ali Karani</a>
       </p>
@@ -1005,10 +1134,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" id="n23">BA Dan</h4>
+          <h4 class="modal-title" id="n23">BA Danish</h4>
         </div>
         <div class="modal-body">
-          <img src="logo.jpg" width="80%" ,height: '130px'/>
+          <img src="appledanish.jpg" width="30%" ,height: '40px'/>
           <p style="text-align:center" id="f23">Apple Turnover</p>
           <p style="display:inline-block" id="p23">25</p>
           <input type="text" size=1,placeholder: "Qty" id="q23" />
@@ -1025,10 +1154,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" id="n24">BA Dan</h4>
+          <h4 class="modal-title" id="n24">BA Danish</h4>
         </div>
         <div class="modal-body">
-          <img src="logo.jpg" width="80%" ,height: '130px'/>
+          <img src="bearclew.jpg" width="30%" ,height: '30px'/>
           <p style="text-align:center" id="f24">Bear Claw</p>
           <p style="display:inline-block" id="p24">25</p>
           <input type="text" size=1,placeholder: "Qty" id="q24" />
@@ -1045,10 +1174,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" id="n25">BA Dan</h4>
+          <h4 class="modal-title" id="n25">BA Danish</h4>
         </div>
         <div class="modal-body">
-          <img src="logo.jpg" width="80%" ,height: '130px'/>
+          <img src="chesebarry.jpg" width="30%" ,height: '30px'/>
           <p style="text-align:center" id="f25">Chese and Berries</p>
           <p style="display:inline-block" id="p25">25</p>
           <input type="text" size=1,placeholder: "Qty" id="q25" />
@@ -1059,12 +1188,13 @@
         </div>
       </div>
     </div>
-  </div> <div class="modal fade" id="modal26" role="dialog">
+  </div>
+  <div class="modal fade" id="modal26" role="dialog">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" id="n26">BA Dan</h4>
+          <h4 class="modal-title" id="n26">BA Danish</h4>
         </div>
         <div class="modal-body">
           <img src="badan.jpg" width="30%" ,height: '40px'/>
@@ -1078,15 +1208,16 @@
         </div>
       </div>
     </div>
-  </div> <div class="modal fade" id="modal27" role="dialog">
+  </div>
+  <div class="modal fade" id="modal27" role="dialog">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" id="n27">BA Dan</h4>
+          <h4 class="modal-title" id="n27">BA Danish</h4>
         </div>
         <div class="modal-body">
-          <img src="bluebmuffin.jpg" width="80%" ,height: '130px'/>
+          <img src="bluberryda.jpg" width="30%" ,height: '30px'/>
           <p style="text-align:center" id="f27">Blueberry Cream</p>
           <p style="display:inline-block" id="p27">25</p>
           <input type="text" size=1,placeholder: "Qty" id="q27" />
@@ -1097,12 +1228,73 @@
         </div>
       </div>
     </div>
-  </div> <div class="modal fade" id="modal28" role="dialog">
+  </div>
+  <div class="modal fade" id="modal50" role="dialog">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" id="n28">BA Muff</h4>
+          <h4 class="modal-title" id="n50">BA Danish</h4>
+        </div>
+        <div class="modal-body">
+          <img src="lemoncream.jpg" width="60%" ,height: '30px'/>
+          <p style="text-align:center" id="f50">Lemon Cream</p>
+          <p style="display:inline-block" id="p50">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q50" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n50','f50','p50','q50')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal51" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n51">BA Danish</h4>
+        </div>
+        <div class="modal-body">
+          <img src="ultimate.jpg" width="30%" ,height: '30px'/>
+          <p style="text-align:center" id="f51">Ultimate Cinnamon</p>
+          <p style="display:inline-block" id="p51">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q51" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n51','f51','p51','q51')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal52" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n52">BA Danish</h4>
+        </div>
+        <div class="modal-body">
+          <img src="vienna cream.jpg" width="80%" ,height: '30px'/>
+          <p style="text-align:center" id="f52">Vienna Cream</p>
+          <p style="display:inline-block" id="p52">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q52" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n52','f52','p52','q52')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal28" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n28">BA Muffin</h4>
         </div>
         <div class="modal-body">
           <img src="cheesemuffin.jpg" width="80%" ,height: '130px'/>
@@ -1122,10 +1314,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" id="n29">BA Muff</h4>
+          <h4 class="modal-title" id="n29">BA Muffin</h4>
         </div>
         <div class="modal-body">
-          <img src="stcheesemuffin.jpg"  width="80%" ,height: '130px'/>
+          <img src="stcheesemuffin.jpg" width="80%" ,height: '130px'/>
           <p style="text-align:center" id="f29">Strawberry Cheese</p>
           <p style="display:inline-block" id="p29">25</p>
           <input type="text" size=1,placeholder: "Qty" id="q29" />
@@ -1142,7 +1334,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" id="n30">BA Muff</h4>
+          <h4 class="modal-title" id="n30">BA Muffin</h4>
         </div>
         <div class="modal-body">
           <img src="banananut.jpg" width="80%" ,height: '130px'/>
@@ -1162,10 +1354,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" id="n31">BA Muff</h4>
+          <h4 class="modal-title" id="n31">BA Muffin</h4>
         </div>
         <div class="modal-body">
-          <img src="logo.jpg" width="80%" ,height: '130px'/>
+          <img src="bluemuffin.jpg" width="80%" ,height: '130px'/>
           <p style="text-align:center" id="f31">Blueberry</p>
           <p style="display:inline-block" id="p31">25</p>
           <input type="text" size=1,placeholder: "Qty" id="q31" />
@@ -1182,10 +1374,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" id="n32">BA Muff</h4>
+          <h4 class="modal-title" id="n32">BA Muffin</h4>
         </div>
         <div class="modal-body">
-          <img src="chchmuffin.jpg" width="80%" ,height: '130px'/>
+          <img src="chchip.jpg" width="80%" ,height: '130px'/>
           <p style="text-align:center" id="f32">Choco Chip</p>
           <p style="display:inline-block" id="p32">25</p>
           <input type="text" size=1,placeholder: "Qty" id="q32" />
@@ -1202,10 +1394,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" id="n33">BA Muff</h4>
+          <h4 class="modal-title" id="n33">BA Muffin</h4>
         </div>
         <div class="modal-body">
-          <img src="logo.jpg" width="80%" ,height: '130px'/>
+          <img src="chocochoco.jpg" width="80%" ,height: '130px'/>
           <p style="text-align:center" id="f33">Choco Choco</p>
           <p style="display:inline-block" id="p33">25</p>
           <input type="text" size=1,placeholder: "Qty" id="q33" />
@@ -1222,10 +1414,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" id="n34">BA Cake</h4>
+          <h4 class="modal-title" id="n34">BA Cake Bread</h4>
         </div>
         <div class="modal-body">
-          <img src="logo.jpg" width="80%" ,height: '130px'/>
+          <img src="bananabread.jpg" width="80%" ,height: '130px'/>
           <p style="text-align:center" id="f34">Banana</p>
           <p style="display:inline-block" id="p34">25</p>
           <input type="text" size=1,placeholder: "Qty" id="q34" />
@@ -1325,7 +1517,7 @@
           <h4 class="modal-title" id="n39">BA Bar Cake</h4>
         </div>
         <div class="modal-body">
-          <img src="logo.jpg" width="80%" ,height: '130px'/>
+          <img src="coffeechese.jpg" width="30%" ,height: '130px'/>
           <p style="text-align:center" id="f39">Coffe Cheese</p>
           <p style="display:inline-block" id="p39">25</p>
           <input type="text" size=1,placeholder: "Qty" id="q39" />
@@ -1345,7 +1537,7 @@
           <h4 class="modal-title" id="n40">BA Bar Cake</h4>
         </div>
         <div class="modal-body">
-          <img src="logo.jpg" width="80%" ,height: '130px'/>
+          <img src="creamchesee.jpg" width="70%" ,height: '130px'/>
           <p style="text-align:center" id="f40">Creme Cheese</p>
           <p style="display:inline-block" id="p40">25</p>
           <input type="text" size=1,placeholder: "Qty" id="q40" />
@@ -1365,7 +1557,7 @@
           <h4 class="modal-title" id="n41">BA Concha</h4>
         </div>
         <div class="modal-body">
-          <img src="logo.jpg" width="80%" ,height: '130px'/>
+          <img src="whiteconcha.jpg" width="80%" ,height: '130px'/>
           <p style="text-align:center" id="f41">White</p>
           <p style="display:inline-block" id="p41">25</p>
           <input type="text" size=1,placeholder: "Qty" id="q41" />
@@ -1385,7 +1577,7 @@
           <h4 class="modal-title" id="n42">BA Concha</h4>
         </div>
         <div class="modal-body">
-          <img src="logo.jpg" width="80%" ,height: '130px'/>
+          <img src="chocolateconcha.jpg" width="80%" ,height: '130px'/>
           <p style="text-align:center" id="f42">Chocolate</p>
           <p style="display:inline-block" id="p42">25</p>
           <input type="text" size=1,placeholder: "Qty" id="q42" />
@@ -1448,7 +1640,7 @@
           <img src="pqothers.jpg" width="80%" ,height: '130px'/>
           <p style="text-align:center" id="f45">417203</p>
           <p style="display:inline-block" id="p45">25</p>
-          <input type="text" size=1,placeholder: "Qty" id="q45"/>
+          <input type="text" size=1,placeholder: "Qty" id="q45" />
           <input type="button" class="btn" value="Odrer" onclick="CheckOut('n45','f45','p45','q45')" />
         </div>
         <div class="modal-footer">
@@ -1485,7 +1677,7 @@
           <h4 class="modal-title" id="n47">BA Galleta con Pasas</h4>
         </div>
         <div class="modal-body">
-          <img src="logo.jpg" width="80%" ,height: '130px'/>
+          <img src="galleto.jpg" width="80%" ,height: '130px'/>
           <p style="text-align:center" id="f47">418163</p>
           <p style="display:inline-block" id="p47">25</p>
           <input type="text" size=1,placeholder: "Qty" id="q47" />
@@ -1505,7 +1697,7 @@
           <h4 class="modal-title" id="n48">BA Donuts Choclate</h4>
         </div>
         <div class="modal-body">
-          <img src="logo.jpg" width="80%" ,height: '130px'/>
+          <img src="dontchoc.jpg" width="80%" ,height: '130px'/>
           <p style="text-align:center" id="f48">11816</p>
           <p style="display:inline-block" id="p48">25</p>
           <input type="text" size=1,placeholder: "Qty" id="q48" />
@@ -1517,19 +1709,19 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="modal49" role="dialog">
+  <div class="modal fade" id="modal55" role="dialog">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" id="n49">BA Donout Cheez Berries</h4>
+          <h4 class="modal-title" id="n55">HO Cup Cake</h4>
         </div>
         <div class="modal-body">
-          <img src="logo.jpg" width="80%" ,height: '130px'/>
-          <p style="text-align:center" id="f49">11819</p>
-          <p style="display:inline-block" id="p49">25</p>
-          <input type="text" size=1,placeholder: "Qty" id="q49" />
-          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n49','f49','p49','q49')" />
+          <img src="dontcheesen.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f55">Choc</p>
+          <p style="display:inline-block" id="p55">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q55" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n55','f55','p55','q55')" />
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -1538,7 +1730,2085 @@
     </div>
   </div>
   </div>
+  <div class="modal fade" id="modal56" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n56">HO Cup Cake</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontcrunch.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f56">Orange</p>
+          <p style="display:inline-block" id="p56">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q56" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n56','f56','p56','q56')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal57" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n57">HO Cup Cake</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f57">Golden</p>
+          <p style="display:inline-block" id="p57">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q57" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n57','f57','p57','q57')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal58" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n58">HO Ding Dong</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f58">Choc</p>
+          <p style="display:inline-block" id="p58">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q58" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n58','f58','p58','q58')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="modal fade" id="modal59" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n59">>HO Ding Dong</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f59">White</p>
+          <p style="display:inline-block" id="p59">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q59" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n59','f59','p59','q59')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal60" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n60">>HO Ding Dong</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f60">Prut Butter</p>
+          <p style="display:inline-block" id="p60">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q60" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n60','f60','p60','q60')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal61" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n61">HO Twinkie</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f61">Golden</p>
+          <p style="display:inline-block" id="p61">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q61" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n61','f61','p61','q61')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal62" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n62">HO Twinkie</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f62">Choc</p>
+          <p style="display:inline-block" id="p62">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q62" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n62','f62','p62','q62')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal63" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n63">HO Twinkie</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f63">P Butter</p>
+          <p style="display:inline-block" id="p63">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q63" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n63','f63','p63','q63')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal64" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n64">HO HO</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f64">Choc</p>
+          <p style="display:inline-block" id="p64">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q64" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n64','f64','p64','q64')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal65" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n65">HO HO</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f65">Peanut Butter</p>
+          <p style="display:inline-block" id="p65">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q65" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n65','f65','p65','q65')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal66" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n66">HO Zinger</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f66">Choc</p>
+          <p style="display:inline-block" id="p66">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q66" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n66','f66','p66','q66')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal67" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n67">HO Zinger</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f67">Vanila</p>
+          <p style="display:inline-block" id="p67">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q67" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n67','f67','p67','q67')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal68" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n68">HO Zinger</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f68">Rasberry</p>
+          <p style="display:inline-block" id="p68">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q68" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n68','f68','p68','q68')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal69" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n69">HO Cake</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f69">Cream Chese</p>
+          <p style="display:inline-block" id="p69">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q69" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n69','f69','p69','q69')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal70" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n70">HO Cake</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f70">Iced Lemon</p>
+          <p style="display:inline-block" id="p70">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q70" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n70','f70','p70','q70')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal71" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n71">HO Brownie</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f71">M & M</p>
+          <p style="display:inline-block" id="p71">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q71" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n71','f71','p71','q71')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal72" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n72">HO Brownie</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f72">Butter Finger</p>
+          <p style="display:inline-block" id="p72">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q72" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n72','f72','p72','q72')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal73" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n73">HO Pie</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f73">Apple</p>
+          <p style="display:inline-block" id="p73">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q73" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n73','f73','p73','q73')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal75" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n75">HO Donut</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f75">Choc</p>
+          <p style="display:inline-block" id="p75">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q75" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n75','f75','p75','q75')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal74" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n74">HO Pie</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f74">Cherry</p>
+          <p style="display:inline-block" id="p74">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q74" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n74','f74','p74','q74')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal76" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n76">HO Dount</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f76">Double Choc</p>
+          <p style="display:inline-block" id="p76">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q76" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n76','f76','p76','q76')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal77" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n77">HO Dount</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f77">Powered</p>
+          <p style="display:inline-block" id="p77">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q77" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n77','f77','p77','q77')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal78" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n78">HO Donut</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f78">Crunch</p>
+          <p style="display:inline-block" id="p78">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q78" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n78','f78','p78','q78')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal79" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n79">HO Donut</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f79">Gaized</p>
+          <p style="display:inline-block" id="p79">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q79" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n79','f79','p79','q79')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal80" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n80">HO Dannish</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f80">Apple</p>
+          <p style="display:inline-block" id="p80">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q80" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n80','f80','p80','q80')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal81" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n81">HO Danish</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f81">Cheese</p>
+          <p style="display:inline-block" id="p81">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q81" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n81','f81','p81','q81')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal82" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n82">HO Dannish</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f82">Berry & Cheese</p>
+          <p style="display:inline-block" id="p82">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q82" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n82','f82','p82','q82')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal83" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n83">HO Muffin</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f83">Banana Nut</p>
+          <p style="display:inline-block" id="p83">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q83" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n83','f83','p83','q83')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal84" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n84">HO Muffin</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f84">Banana</p>
+          <p style="display:inline-block" id="p84">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q84" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n84','f84','p84','q84')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal85" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n85">HO Muffin</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f85">Choc Chip/p>
+          <p style="display:inline-block" id="p85">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q85" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n85','f85','p85','q85')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal86" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n86">HO Twins</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f86">Choc Chip</p>
+          <p style="display:inline-block" id="p86">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q86" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n86','f86','p86','q86')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal87" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n87">HO Twins</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="87%" ,height: '130px'/>
+          <p style="text-align:center" id="f87">11816</p>
+          <p style="display:inline-block" id="p87">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q87" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n87','f87','p87','q87')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal54" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="n54">BA Donuts Powered</h4>
+        </div>
+        <div class="modal-body">
+          <img src="dontpow.jpg" width="80%" ,height: '130px'/>
+          <p style="text-align:center" id="f54">11816</p>
+          <p style="display:inline-block" id="p54">25</p>
+          <input type="text" size=1,placeholder: "Qty" id="q54" />
+          <input type="button" class="btn" value="Odrer" onclick="CheckOut('n54','f54','p54','q54')" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script>
     var order = []; var total = 0;
     function CheckOut(name, flavour, price, quantity) {
